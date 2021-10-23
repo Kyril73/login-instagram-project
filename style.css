@@ -13,7 +13,6 @@ body {
 }
 
 .login-container {
-  background-color: grey;
   width: 350px;
   height: 90%;
   min-height: 800px;
@@ -32,4 +31,22 @@ body {
   width: 100%;
   box-sizing: border-box;
   margin: 5px 0;
+  padding: 10px;
+  font-size: 11px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+.login-container input[type="submit"] {
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  background-color: cornflowerblue;
+  border: none;
+  margin: 15px 0;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid lightgrey;
 }
