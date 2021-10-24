@@ -17,10 +17,15 @@ body {
   height: 90%;
   min-height: 800px;
   margin: auto;
+  margin-top: 40px;
+}
+
+.right-content {
+  width: 100%;
 }
 
 .login-container {
-  padding: 0 50px 50px;
+  padding: 0 50px 20px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -79,7 +84,7 @@ hr {
 
 .sign-up-container {
   text-align: center;
-  padding: 10px 0;
+  padding: 40px 0;
 }
 .sign-up-container a {
   text-decoration: none;
@@ -88,7 +93,7 @@ hr {
 
 .buttons-container {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .buttons-container img {
   margin-top: 20px;
@@ -107,4 +112,43 @@ footer {
 footer a {
   display: block;
   margin: 3px 7px;
+}
+
+.flex > img {
+  display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  body {
+    background-color: #f1f1f1;
+  }
+
+  .login-container {
+    background-color: white;
+    border: 1px solid lightgrey;
+  }
+  .sign-up-container {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 10px 0;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .content-container {
+    width: 700px;
+  }
+  .right-content {
+    width: 50%;
+  }
+  .flex > img {
+    width: 40%;
+    display: block;
+  }
+  .flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
